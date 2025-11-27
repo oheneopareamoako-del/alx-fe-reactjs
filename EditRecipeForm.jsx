@@ -9,11 +9,11 @@ const EditRecipeForm = ({ recipe, onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     updateRecipe(recipe.id, { title, description });
-    onClose(); // close the form
+    onClose();
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginBottom: '10px' }}>
+    <form onSubmit={handleSubmit}>
       <input value={title} onChange={(e) => setTitle(e.target.value)} />
       <input value={description} onChange={(e) => setDescription(e.target.value)} />
       <button type="submit">Update</button>

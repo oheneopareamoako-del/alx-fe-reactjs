@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<><AddRecipeForm /><RecipeList /></>} />
-        {/* Additional routes can be added here for detail/edit pages */}
+        {/* Additional routes for RecipeDetail or EditRecipeForm */}
       </Routes>
     </Router>
   );
