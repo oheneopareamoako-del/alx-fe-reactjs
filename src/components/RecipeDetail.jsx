@@ -1,12 +1,6 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import { useRecipeStore } from './recipeStore';
+kimport React from 'react';
 
-const RecipeDetail = () => {
-  const { id } = useParams();
-  const recipes = useRecipeStore((state) => state.recipes);
-  const recipe = recipes.find((r) => r.id === Number(id));
-
+const RecipeDetail = ({ recipe }) => {
   if (!recipe) return <p>Recipe not found</p>;
 
   return (
