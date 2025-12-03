@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-import AddRecipeForm from "./components/AddRecipeForm";
-import RecipeList from "./components/RecipeList";
-
-function App() {
-  return (
-    <div style={{ padding: "2rem" }}>
-      <h1>Recipe Sharing App</h1>
-
-      <AddRecipeForm />
-      <hr style={{ margin: "2rem 0" }} />
-
-      <RecipeList />
-    </div>
-=======
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AddRecipeForm from './components/AddRecipeForm';
@@ -25,9 +10,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<><AddRecipeForm /><RecipeList /></>} />
+        {/* Additional routes for RecipeDetail or EditRecipeForm */}
       </Routes>
     </Router>
->>>>>>> fbd1328f7b513cdb07b4d56607d1a8280a73490b
   );
 }
 
